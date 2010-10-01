@@ -11,7 +11,8 @@ struct Letter {
 };
 void MakeNull(Letter **newNode);
 struct Letter *addLETTERS(Letter *Top, Letter **head, char& letters);
-struct Letter *delLETTERS(Letter *Top);
+struct Letter *rewindLIST(Letter *Top, Letter **head);
+struct Letter *delLETTERS(Letter *Top,Letter **head);
 struct Letter *printLinkedList(Letter *Top);
 
 int main() {
@@ -25,11 +26,15 @@ int main() {
 	MakeNull(&Top);
 	addLETTERS(Top, &head,letters);
 	printLinkedList(head);
+	Top = head;
+	rewindLIST(Top,&head);
+	printLinkedList(head);
+	delLETTERS(Top,&head);
+	printLinkedList(head);
 	return 0;
 }
 
 void MakeNull(Letter **newNode){
-    
 	*newNode = new Letter;
 	(*newNode)->let = 0;
 	(*newNode)->next = 0;
@@ -59,9 +64,25 @@ struct Letter *printLinkedList(Letter *Top){
 	
 	return Top;
 }
-//struct Letter *delLETTERS(Letter *TOP) {
+struct Letter *rewindLIST(Letter *Top, Letter **head){
+	
+	if(Top->next != 0){
+		Top = Top->next;
+		rewindLIST(Top,head);
+	}
+	
+	return Top;
+}
+struct Letter *delLETTERS(Letter *Top,Letter **head) {
+ 
+	if(Top->next != 0){
+		*head = Top;
+		Top = Top->next;
+		delete *head;
+		delLETTERS(Top,head);
+	}
+		
+return Top;
 
-//return Top;
-
-//}
+}
 
