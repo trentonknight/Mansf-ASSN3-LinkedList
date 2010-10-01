@@ -9,8 +9,8 @@ struct Letter {
 	char let;
 	Letter *next;
 };
-void MakeNull(Letter *newNode);
-struct Letter *addLETTERS(Letter *Top, Letter *head, char& letters);
+void MakeNull(Letter **newNode);
+struct Letter *addLETTERS(Letter *Top, Letter **head, char& letters);
 struct Letter *delLETTERS(Letter *Top);
 struct Letter *printLinkedList(Letter *Top);
 
@@ -21,40 +21,41 @@ int main() {
 	head = new Letter;
 	Top = new Letter;
 	
-	MakeNull(head);
-	MakeNull(Top);
-	addLETTERS(Top, head,letters);
-	cout << Top->let << endl;
-	//printLinkedList(Top);
+	MakeNull(&head);
+	MakeNull(&Top);
+	addLETTERS(Top, &head,letters);
+	printLinkedList(head);
 	return 0;
 }
 
-void MakeNull(Letter *newNode){
+void MakeNull(Letter **newNode){
     
-        newNode = new Letter;
-        newNode->let = 0;
-        newNode->next = 0;
+	*newNode = new Letter;
+	(*newNode)->let = 0;
+	(*newNode)->next = 0;
 }
 
-struct Letter *addLETTERS(Letter *Top, Letter *head, char& letters) {
-
+struct Letter *addLETTERS(Letter *Top, Letter **head, char& letters) {
+	
 	if(letters != 'z' + 1){
 		Top = new Letter;
 		Top->let = letters++;
-		Top->next = head;
-		head = Top;
+		Top->next = *head;
+		*head = Top;
 		addLETTERS(Top,head,letters);
 	}
 	
 	return Top;
-	   
+	
 }
 
 struct Letter *printLinkedList(Letter *Top){
-		Top = new Letter;
-		cout << Top->let << endl;
-		Top = Top->next;
-		printLinkedList(Top);
+	
+	if(Top != 0){
+	cout << Top->let << endl;
+	Top = Top->next;
+	printLinkedList(Top);
+	}
 	
 	return Top;
 }
