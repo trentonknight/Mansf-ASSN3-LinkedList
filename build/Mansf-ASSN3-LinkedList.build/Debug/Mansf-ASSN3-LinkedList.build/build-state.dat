@@ -1,28 +1,28 @@
 TMansf-ASSN3-LinkedList
 v7
 r0
-t307642946.109255
+t307755998.091387
 cCheck dependencies
 cCompileC build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cLd /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList normal x86_64
 
 N/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList
-t1285950146
-s11776
+t1286063189
+s11608
 
 N/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/Mansf-ASSN3-LinkedList.LinkFileList
-c000000004CA53205000000000000008A
-t1285894661
+c000000004CA79CFB000000000000008A
+t1286053115
 s138
 
 N/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o
-t1285950146
-s70304
+t1286063189
+s69800
 
 N/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp
-c000000004CA60AC100000000000005FC
-t1285950145
-s1532
+c000000004CA7C4540000000000000594
+t1286063188
+s1428
 i<cstdlib>
 i<cstdio>
 i<stdio.h>
@@ -40,11 +40,11 @@ s16756
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307642945#307642945#0(0"0(0#1#0"8615836672#0"0#
+lSLF07#2@18"Check dependencies307755998#307755998#0(0"0(0#1#0"8599446240#0"0#
 
 CCompileC build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s307642945.722546
-e307642946.085986
+s307755988.856938
+e307755989.151897
 r1
 xCompileC
 xbuild/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o
@@ -53,15 +53,15 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp307642945#307642946#0(0"0(0#0#47"/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp8612585504#1561"    cd /Developer/CODE/Mansf-ASSN3-LinkedList    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-generated-files.hmap -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-own-target-headers.hmap -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-all-target-headers.hmap -iquote /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-project-headers.hmap -F/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/include -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/DerivedSources/x86_64 -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/DerivedSources -c /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp -o /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@55"Compile /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp307755988#307755989#0(160"/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp: In function 'int main()':/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp:22: warning: unused variable 'alpha'1(22@23"Unused variable 'alpha'307755989#75#85#0(6@47"/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp307755988#22#0#22#0#19"unused variable '*'0(0#0#47"/Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp8615801344#1561"    cd /Developer/CODE/Mansf-ASSN3-LinkedList    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-generated-files.hmap -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-own-target-headers.hmap -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-all-target-headers.hmap -iquote /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Mansf-ASSN3-LinkedList-project-headers.hmap -F/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/include -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/DerivedSources/x86_64 -I/Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/DerivedSources -c /Developer/CODE/Mansf-ASSN3-LinkedList/main.cpp -o /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/main.o0#
 
 CLd /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList normal x86_64
-s307642946.086071
-e307642946.109205
+s307755989.151982
+e307755989.173787
 r1
 xLd
 x/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList
 xnormal
 xx86_64
-lSLF07#2@78"Link /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList307642946#307642946#0(0"0(0#0#0"8617127488#558"    cd /Developer/CODE/Mansf-ASSN3-LinkedList    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -F/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -filelist /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/Mansf-ASSN3-LinkedList.LinkFileList -mmacosx-version-min=10.6 -o /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList0#
+lSLF07#2@78"Link /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList307755989#307755989#0(0"0(0#0#0"8616515360#558"    cd /Developer/CODE/Mansf-ASSN3-LinkedList    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -F/Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug -filelist /Developer/CODE/Mansf-ASSN3-LinkedList/build/Mansf-ASSN3-LinkedList.build/Debug/Mansf-ASSN3-LinkedList.build/Objects-normal/x86_64/Mansf-ASSN3-LinkedList.LinkFileList -mmacosx-version-min=10.6 -o /Developer/CODE/Mansf-ASSN3-LinkedList/build/Debug/Mansf-ASSN3-LinkedList0#
 

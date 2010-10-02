@@ -11,26 +11,30 @@ struct Letter {
 };
 void MakeNull(Letter **newNode);
 struct Letter *addLETTERS(Letter *Top, Letter **head, char& letters);
-struct Letter *rewindLIST(Letter *Top, Letter **head);
 struct Letter *delLETTERS(Letter *Top,Letter **head);
 struct Letter *printLinkedList(Letter *Top);
 
 int main() {
 	Letter *Top = 0;
 	Letter *head = 0;
+	Letter *save = 0;
 	char letters = 'a';
+	char alpha = '\0';
 	head = new Letter;
 	Top = new Letter;
+	save = new Letter;
 	
 	MakeNull(&head);
 	MakeNull(&Top);
+	MakeNull(&save);
 	addLETTERS(Top, &head,letters);
-	printLinkedList(head);
+	//printLinkedList(head);
+	//printLinkedList(head);
 	Top = head;
-	rewindLIST(Top,&head);
-	printLinkedList(head);
+	//MakeNull(&head);
+	*save = Top[0];
 	delLETTERS(Top,&head);
-	printLinkedList(head);
+	printLinkedList(save);
 	return 0;
 }
 
@@ -57,32 +61,22 @@ struct Letter *addLETTERS(Letter *Top, Letter **head, char& letters) {
 struct Letter *printLinkedList(Letter *Top){
 	
 	if(Top != 0){
-	cout << Top->let << endl;
-	Top = Top->next;
-	printLinkedList(Top);
-	}
-	
-	return Top;
-}
-struct Letter *rewindLIST(Letter *Top, Letter **head){
-	
-	if(Top->next != 0){
+		cout << Top->let << endl;
 		Top = Top->next;
-		rewindLIST(Top,head);
+		printLinkedList(Top);
 	}
 	
 	return Top;
 }
 struct Letter *delLETTERS(Letter *Top,Letter **head) {
- 
-	if(Top->next != 0){
+	
+	if(Top != 0){
 		*head = Top;
 		Top = Top->next;
 		delete *head;
 		delLETTERS(Top,head);
 	}
 		
-return Top;
-
+		return Top;
 }
 
