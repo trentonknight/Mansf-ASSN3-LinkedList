@@ -19,7 +19,6 @@ int main() {
 	Letter *head = 0;
 	Letter *save = 0;
 	char letters = 'a';
-	char alpha = '\0';
 	head = new Letter;
 	Top = new Letter;
 	save = new Letter;
