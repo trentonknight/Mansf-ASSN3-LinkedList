@@ -8,6 +8,7 @@
 ///  FUNCTIONS:	LinkedListDriver - contains recursive functions and other functions.
 ///             MakeNull - Nullifies Nodes.
 ///             enterLetters - simple char array creator.
+///             checkLetters - verifies char are lowercase letters
 ///             addLETTERS - recurses through linked list and adds char array to new nodes.
 ///             delLETTERS - recurses and deletes nodes while traversing linked list.
 ///             printLinkedList - traverses list and prints out to user.
@@ -16,6 +17,7 @@
 #include <cstdio>
 #include <stdio.h>
 #include <iostream>
+#include <string>
 
 using namespace std;
 ///structure for single linked list
@@ -25,6 +27,7 @@ struct Letter {
 };
 void LinkedListDriver();//function for containing recursive functions
 void enterLetters(char letters[]);//simple char array
+bool checkLetters(char letters[],int& length_word);//verify letters
 void MakeNull(Letter **newNode);//nullify nodes
 struct Letter *addLETTERS(Letter *Top, Letter **head, char letters[]);
 struct Letter *delLETTERS(Letter *Top, Letter **head);
@@ -85,10 +88,35 @@ void MakeNull(Letter **newNode) {
 //  OUTPUT:	
 //      Return Val: letters[] with characters
 ////////////////////////////////////////////////////////////////////////
-
 void enterLetters(char letters[]){
-	cout << "Enter Under 200 Letters: " << endl;
+	int length_word = 0;
+	cout << "Enter Under 200 Letters in lowercase: " << endl;
 	cin.getline(letters,200);
+	if(!checkLetters(letters,length_word)){
+		cout << "ERROR! contains invalid characters." << endl;
+		enterLetters(letters);
+	}
+			
+}
+///////////////////////////////////////////////////////////////////////
+//  FUNCTION: checkLetters
+//  DESCRIPTION: verifies user input
+//  INPUT:
+//      Parameters: letters, length_word
+//  OUTPUT:	
+//      Return Val: bool
+////////////////////////////////////////////////////////////////////////
+bool checkLetters(char letters[],int& length_word){
+	bool check = true;
+	while(letters[length_word] != 0){
+		///only lowercase alpha characters
+		if(letters[length_word] < 'a'){
+			
+			check = false;
+		}
+		length_word++;
+	}
+	return check;
 }
 ///////////////////////////////////////////////////////////////////////
 //  FUNCTION:	addLETTERS
